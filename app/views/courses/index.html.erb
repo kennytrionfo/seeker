@@ -1,0 +1,7 @@
+<h1> Courses </h1>
+<% @courses.each do |course| %>
+    <h2><%= course.name %></h2>
+    <h3><%= course.start_date %></h2>
+    <p><%= course.end_date %></p>
+    <%= link_to 'Show courses', course_path(course.id) %>
+<% end %>
