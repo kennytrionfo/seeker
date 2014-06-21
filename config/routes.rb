@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :installs
   resources :courses
   root 'site#index'
   get '/about', to: 'static#about', as: :about
